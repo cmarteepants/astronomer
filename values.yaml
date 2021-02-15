@@ -196,6 +196,15 @@ nginx:
   # Used to restrict IPs which can reach the nginx ingress
   loadBalancerSourceRanges:
 
+  # Set to "nlb" to provision a network load balancer for NGINX instead of a classic load balancer
+  loadBalancerType:
+
+  # Set to "ssl"
+  loadBalancerBackendProtocol:
+
+  # If using ACM, enter the ARN of the certificate to use on the load balancer
+  loadBalancerAcmCertificate:
+
 
 #################################
 ## Grafana configuration
